@@ -48,7 +48,7 @@ Then:
 import "github.com/annihilatorrrr/speedlog"
 ```
 
-Adjust the path to whatever you actually publish.
+Adjust the path to whatever you actually publish (whenever you copy the file).
 
 ---
 
