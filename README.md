@@ -1,4 +1,3 @@
-````md
 # speedlog (async buffered logger for Go)
 
 High-throughput, low-GC logger for Go services.
@@ -263,10 +262,6 @@ func main() {
 * Channel backpressure means your app **can** slow down if you out-log your IO sink. That’s intentional: better slow than silently lose logs.
 * If you really need non-blocking logs with drops, you can change the send logic to `select` + `default` and discard on full – but then you’re in “zap `SampledLogger`” territory and should document that clearly.
 
-````
-
----
-
 ### `example/main.go`
 
 Here’s a clean `main.go` you can slap into an `example/` folder in the repo:
@@ -326,4 +321,4 @@ func main() {
 
     logger.Print("http server stopped")
 }
-````
+```
